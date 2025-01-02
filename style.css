@@ -1,6 +1,6 @@
 img {
   /* make img reasonable size */
-  width: 50%;
+  width: 65%;
   height: auto;
 
   /* center the img */
@@ -23,7 +23,7 @@ ul {
 li {
   float: left;
   color: #fdf6e3;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 li a {
@@ -48,7 +48,7 @@ li a:link {
 
 h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin: 2rem 0;
 }
 
@@ -56,11 +56,10 @@ h1 {
 main {
   max-width: 800px;
   margin: 0 auto;
-  /* padding: 2rem; */
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   margin: 1.5rem 0;
 }
@@ -68,7 +67,7 @@ p {
 /* Make layout responsive */
 @media (max-width: 768px) {
   img {
-    width: 80%;  /* Larger images on mobile */
+    width: 85%;  /* Larger images on mobile */
   }
   
   #about-me {
@@ -82,6 +81,6 @@ p {
   }
   
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
