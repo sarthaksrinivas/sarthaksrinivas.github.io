@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 img {
   /* make img reasonable size */
   width: 65%;
@@ -13,7 +17,6 @@ nav {
 }
 
 ul {
-
   list-style-type: none;
   margin: 0;
   padding: 0;
