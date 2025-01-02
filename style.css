@@ -1,19 +1,50 @@
-html {
-  font-size: 16px;
+/* CSS Variables for colors and common values */
+:root {
+  --color-primary: #d33682;
+  --color-secondary: #268bd2;
+  --color-hover: #6c71c4;
+  --color-text: #93a1a1;
+  --color-light: #fdf6e3;
+  --base-font-size: 16px;
+  --spacing: 1rem;
 }
 
+/* Base styles */
+html {
+  font-size: var(--base-font-size);
+}
+
+/* Layout */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: calc(var(--spacing) * 2) 0;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  color: var(--color-text);
+}
+
+/* Images */
 img {
-  /* make img reasonable size */
   width: 65%;
   height: auto;
-
-  /* center the img */
   display: block;
-  margin: 2rem auto;
+  margin: calc(var(--spacing) * 2) auto;
 }
 
+/* Navigation */
 nav {
-  background: linear-gradient(to right, #d33682, #6c71c4);
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
 
 ul {
@@ -25,24 +56,36 @@ ul {
 
 li {
   float: left;
-  color: #fdf6e3;
+  color: var(--color-light);
   font-size: 1.3rem;
 }
 
 li a {
   display: block;
-  padding: 1rem 1.2rem;
-  text-decoration: none; /* remove underline */ 
-  color: #fdf6e3;
+  padding: var(--spacing) 1.2rem;
+  text-decoration: none;
+  color: var(--color-light);
 }
 
 li a:hover {
-  background-color: #073642;
-  color: #fdf6e3;
+  background-color: var(--color-hover);
 }
 
-li a:visited {
-  color: #fdf6e3;
+/* Media Queries */
+@media (max-width: 768px) {
+  img {
+    width: 85%;
+  }
+  
+  li {
+    float: none;
+    text-align: center;
+  }
+  
+  #about-me {
+    padding: var(--spacing);
+    margin: var(--spacing);
+  }
 }
 
 li a:link {
@@ -65,6 +108,7 @@ p {
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 1.5rem 0;
+  color: #93a1a1;
 }
 
 /* Make layout responsive */
