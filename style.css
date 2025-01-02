@@ -1,0 +1,87 @@
+img {
+  /* make img reasonable size */
+  width: 50%;
+  height: auto;
+
+  /* center the img */
+  display: block;
+  margin: 2rem auto;
+}
+
+nav {
+  background: linear-gradient(to right, #d33682, #6c71c4);
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  color: #fdf6e3;
+  font-size: 1.1rem;
+}
+
+li a {
+  display: block;
+  padding: 1rem 1.2rem;
+  text-decoration: none; /* remove underline */ 
+  color: #fdf6e3;
+}
+
+li a:hover {
+  background-color: #073642;
+  color: #fdf6e3;
+}
+
+li a:visited {
+  color: #fdf6e3;
+}
+
+li a:link {
+  color: #fdf6e3;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+/* Add new styles for the card layout */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+/* Make layout responsive */
+@media (max-width: 768px) {
+  img {
+    width: 80%;  /* Larger images on mobile */
+  }
+  
+  #about-me {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  li {
+    float: none;  /* Stack nav items on mobile */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
