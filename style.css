@@ -315,13 +315,20 @@ main > * + * {
     width: min(calc(100% - 1rem), var(--content-width));
   }
 
-  .top-nav,
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
   .cta-row {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
   }
 
   .top-nav a + a,
   .button + .button {
-    margin-top: 0.45rem;
+    margin-top: 0;
   }
 }
